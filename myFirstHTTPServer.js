@@ -25,6 +25,8 @@ var server_ip_address = process.env.OPENSHIFT_NODEJS_IP || '127.0.0.1';
 //We need a function which handles requests and send response
 function handleRequest(request, response){
     response.end('Yes! It Works!! Path Hit: ' + request.url);
+    console.log("my ip address is: " + server_ip_address);
+    console.log("the port number is: " + server_port);
 }
 //What is a request?
 //What is a response?
